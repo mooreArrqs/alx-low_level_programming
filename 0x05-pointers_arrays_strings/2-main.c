@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-char _strr;
+char *strr;
 int len;
 
 _strr = "My first strlen!";
