@@ -16,12 +16,11 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	tmp = *head;
 	if (head == NULL)
+		new_node = create_node(str);
+	if (new_node == NULL)
 	{
 		return (NULL);
-		new_node = create_node(str);
 	}
-	if (new_node == NULL)
-		return (NULL);
 
 	if (*head == NULL)
 	{
@@ -51,6 +50,7 @@ list_t *create_node(const char *str)
 	new_node->len = len(str);
 	new_node->next = NULL;
 	return (new_node);
+}
 
 /**
  * len - the length of a string.
