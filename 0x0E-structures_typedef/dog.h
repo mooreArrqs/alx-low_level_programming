@@ -2,7 +2,7 @@
 #define DOG_H
 
 /**
- * strct dog - A new type defining a dog.
+ * struct dog - A new type defining a dog.
  *
  * @name: The name of a dog.
  * @age: The age of a dog.
@@ -17,7 +17,7 @@ struct dog
 };
 
 /**
- * dog_t - typedef for struct dog
+ * dog_t - Typedef for struct dog
  */
 
 typedef struct dog dog_t;
